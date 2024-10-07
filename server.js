@@ -15,7 +15,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: 'https://bloodcell-client.onrender.com/',
+  origin: 'http://localhost:3000',
   credentials: true
 }));
 app.use(bodyParser.json());
