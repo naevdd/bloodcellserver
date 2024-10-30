@@ -1,10 +1,10 @@
 const Donor = require('../models/Donor');
 
 exports.createDonor = async (req, res) => {
-  const { name, bloodType, phone } = req.body;
+  const { name, bloodType, phone, bystander, bystanderphone } = req.body;
 
   try {
-    const donor = new Donor({ name, bloodType, phone });
+    const donor = new Donor({ name, bloodType, phone, bystander, bystandphone});
     await donor.save();
     res.status(201).json({ message: 'Donor created successfully' });
   } catch (error) {
