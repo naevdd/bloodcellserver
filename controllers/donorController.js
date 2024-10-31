@@ -4,7 +4,7 @@ exports.createDonor = async (req, res) => {
   const { name, bloodType, phone, bystander, bystanderphone } = req.body;
 
   try {
-    const donor = new Donor({ name, bloodType, phone, bystander, bystandphone});
+    const donor = new Donor({ name, bloodType, phone, bystander, bystanderphone});
     await donor.save();
     res.status(201).json({ message: 'Donor created successfully' });
   } catch (error) {
