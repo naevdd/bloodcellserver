@@ -13,11 +13,11 @@ const donorSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  bystander:{
+  bystander: {
     type: String,
     required: true,
   },
-  bystanderphone:{
+  bystanderphone: {
     type: String,
     required:true,
   },
