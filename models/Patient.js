@@ -13,10 +13,22 @@ const patientSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  units: {
+  noOfBags: {
     type: Number,
     required: true,
   },
+  hospital: {
+    type: String,
+    required: true,
+  },
+  bystanderphone:{
+    type:String,
+    required:true,
+  },
+  dateRequired:{
+    type: Date,
+    required:true,
+  }
 });
 
 module.exports = mongoose.model('Patient', patientSchema);

@@ -4,7 +4,7 @@ exports.createPatient = async (req, res) => {
   const { name, bloodType, phone, units } = req.body;
 
   try {
-    const patient = new Patient({ name, bloodType, phone, units });
+    const patient = new Patient({ name, bloodType, phone, noOfBags, hospital, bystanderphone, dateRequired, timeRequired });
     await patient.save();
     res.status(201).json({ message: 'Patient created successfully' });
   } catch (error) {
