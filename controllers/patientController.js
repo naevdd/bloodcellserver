@@ -1,7 +1,7 @@
 const Patient = require('../models/Patient');
 
 exports.createPatient = async (req, res) => {
-  const { name, bloodType, phone, units } = req.body;
+  const { name, bloodType, phone, noOfBags, hospital, bystanderphone, dateRequired, timeRequired} = req.body;
 
   try {
     const patient = new Patient({ name, bloodType, phone, noOfBags, hospital, bystanderphone, dateRequired, timeRequired });

@@ -13,14 +13,6 @@ const donorSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  bystander: {
-    type: String,
-    required: true,
-  },
-  bystanderphone: {
-    type: String,
-    required:true,
-  },
 });
 
 module.exports = mongoose.model('Donor', donorSchema);
