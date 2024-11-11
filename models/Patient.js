@@ -28,6 +28,10 @@ const patientSchema = new mongoose.Schema({
   dateRequired:{
     type: Date,
     required:true,
+  },
+  timeRequired: {
+    type:String,
+    required:true,
   }
 });
 
