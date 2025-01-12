@@ -16,7 +16,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://bloodcell-client.onrender.com/",
+    origin: "https://bloodcell-client.onrender.com",
     credentials: true,
   })
 );
