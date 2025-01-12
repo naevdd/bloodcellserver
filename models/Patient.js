@@ -26,7 +26,7 @@ const patientSchema = new mongoose.Schema({
     required:true,
   },
   dateRequired:{
-    type: Date,
+    type: String,
     required:true,
   },
   timeRequired: {
